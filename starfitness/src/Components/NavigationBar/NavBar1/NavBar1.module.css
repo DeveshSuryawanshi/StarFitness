@@ -1,0 +1,21 @@
+
+.linkcomp{
+    margin: 0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.login{
+    font-size: 20px ;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 50px;
+    color: white;
+    border-radius: 7px;
+}
+
+.logoname{
+    font-weight: 900;
+    margin: 0px;
+}

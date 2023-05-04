@@ -1,0 +1,17 @@
+.heading1{
+    font-size: 50px;
+}
+
+.box1{
+    margin: 60px 40px;
+    width: 35rem;
+}
+
+.LinkComp{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black ;
+    color: white;
+    border-radius: 5px;
+}
+
