@@ -1,0 +1,22 @@
+.container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.burger{
+    font-size: 30px;
+}
+
+.logoname{
+    font-weight: 900;
+}
+
+.logo{
+    margin-left: 10px;
+}

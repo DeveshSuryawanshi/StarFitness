@@ -2,7 +2,6 @@ import { Box, Flex, Stack, Text, WrapItem } from "@chakra-ui/react";
 import StarFitness from "../AppLogo/StarFitness.png";
 import { Link } from "react-router-dom";
 import style from "./NavBar1.module.css";
-import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
 
 export default function NavBar1() {
 
