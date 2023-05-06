@@ -1,8 +1,9 @@
-import { Box, Button, Container, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Input, Text, useDisclosure } from "@chakra-ui/react";
 import style from "./NavBar2.module.css";
 import StarFitness from "../AppLogo/StarFitness.png";
 import { useRef } from "react";
-import {GiHamburgerMenu} from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 import {
     Drawer,
     DrawerBody,
@@ -24,7 +25,7 @@ export default function NavBar2() {
                 <Text className={style.logoname}>StarFitness</Text>
             </Box>
             <Box className={style.menu}>
-                <GiHamburgerMenu className={style.burger} ref={btnRef} onClick={onOpen}/>
+                <GiHamburgerMenu className={style.burger} ref={btnRef} onClick={onOpen} />
                 <Drawer
                     isOpen={isOpen}
                     placement='right'
@@ -34,14 +35,17 @@ export default function NavBar2() {
                     <DrawerOverlay />
                     <DrawerContent>
                         <DrawerCloseButton />
-                        <DrawerHeader>Create your account</DrawerHeader>
-
-                        <DrawerFooter>
-                            <Button variant='outline' mr={3} onClick={onClose}>
-                                Cancel
-                            </Button>
-                            <Button colorScheme='blue'>Save</Button>
-                        </DrawerFooter>
+                        <DrawerHeader>MENU</DrawerHeader>
+                        <Input margin={"0px 25px"} width={"270px"} border={"solid black 1px"} placeholder='Search here...' />
+                        <Box className={style.contrainer2}>
+                            <Box className={style.mini1}>
+                                <Link className={style.linkcomp} to="/">Home</Link>
+                                <Link className={style.linkcomp} to="/About">About</Link>
+                                <Link className={style.linkcomp} to="/Contact">Contact</Link>
+                                <Link className={style.linkcomp} to="/Products">Products</Link>
+                                <Link className={style.linkcomp} to="/Blogs">Blogs</Link>
+                            </Box>
+                        </Box>
                     </DrawerContent>
                 </Drawer>
             </Box>
