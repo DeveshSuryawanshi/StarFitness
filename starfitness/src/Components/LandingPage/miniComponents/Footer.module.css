@@ -1,0 +1,96 @@
+.heading1{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+.contaiuner{
+    padding: 70px;
+    background-color: black;
+}
+.socialLogo{
+    font-size: 30px;
+    margin: 20px;
+    color: white;
+}
+
+.image{
+    width: 300px;
+}
+
+.mainContainer{
+    background-color: black;
+}
+
+.textColor{
+    color: white;
+    margin: 5px;
+}
+
+.mini{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1144px) {
+    .image{
+        width: 200px;
+    }
+
+    .heading1{
+        font-size: 20px;
+    }
+
+    .textColor{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 970px) {
+    .image{
+        width: 150px;
+    }
+
+    .heading1{
+        font-size: 20px;
+    }
+
+    .textColor{
+        font-size: 10px;
+    }
+
+    .socialLogo{
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .image{
+        width: 100px;
+    }
+
+    .heading1{
+        font-size: 15px;
+    }
+
+    .textColor{
+        font-size: 9px;
+    }
+
+    .socialLogo{
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 690px) {
+    .mini{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .image{
+        width: 80px;
+    }
+}

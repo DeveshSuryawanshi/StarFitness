@@ -11,7 +11,6 @@ export default function NavigationBar(){
             {
                 midScreenSize ? <NavBar1/> : <NavBar2/>
             }
-            
         </Box>
     )
 }

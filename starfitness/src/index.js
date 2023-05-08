@@ -9,13 +9,13 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <AppContext>
-    <BrowserRouter>
+  <BrowserRouter>
+    <AppContext>
       <ChakraProvider>
         <App />
       </ChakraProvider>
-    </BrowserRouter>
-  </AppContext>
+    </AppContext>
+  </BrowserRouter>
 );
 
 reportWebVitals();

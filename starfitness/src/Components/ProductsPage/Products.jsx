@@ -1,5 +1,91 @@
+import { Box, Heading, Input } from "@chakra-ui/react";
+import style from "../ProductsPage/Products.module.css";
+import { useEffect, useState } from "react";
+import WalkthroughPopover1 from "./miniComps/WalkthroughPopover1";
+import FunctionalBar from "./miniComps/FunctionalBar";
+import Card from "./miniComps/Cards";
+import { Spinner } from '@chakra-ui/react';
 
+export default function Products() {
 
-export default function Products () {
-    return <h1>Products Page</h1>
+    const [productdata, setProductData] = useState([]);
+    const [loding, setloding] = useState(true);
+
+    const getdata = (val) => {
+
+        let url;
+        if (val === "Asc") {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=title&_order=asc`;
+        } else if (val === "Dec") {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=title&_order=desc`;
+        } else if (val === "lowtohigh") {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=price&_order=asc`;
+        } else if (val === "hightolow") {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=price&_order=desc`;
+        } else if (val === "Micronutrients" || val === "equipment") {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?category=${val}`;
+        } else if (val === "GainerCreatine") {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?category=Gainer&category=Creatine`;
+        } else {
+            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`;
+        }
+
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => {
+                setProductData(data)
+                setloding(false);
+            })
+            .catch((error) => {
+                console.log(error)
+                setloding(true)
+            })
+    }
+
+    function getSort(val) {
+        getdata(val);
+    }
+
+    const search = (e) => {
+        fetch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?q=${e.target.value}`)
+            .then((res) => res.json())
+            .then((data) => setProductData(data))
+            .catch((error)=> console.log(error))
+    }
+
+    useEffect(() => {
+        getdata();
+    }, [])
+
+    return (
+        <Box>
+            <Box style={{ backgroundColor: "whitesmoke", padding: "20px" }}>
+                <Heading>
+                    Find Your Need
+                    <Input placeholder='Search here' type="Search" backgroundColor={"white"} onChange={(e) => search(e)} />
+                </Heading>
+            </Box>
+            <Box display={"flex"} justifyContent={"flex-start"}>
+                <Box>
+                    <FunctionalBar getSort={getSort} />
+                </Box>
+                <Box>
+                    {
+                        loding ? <Spinner
+                        m={"auto"}
+                        thickness='4px'
+                        speed='0.65s'
+                        emptyColor='gray.200'
+                        color='blue.500'
+                        size='xl'
+                      /> : productdata.map((item, i) => {
+                            return <Card {...item} />
+                        })
+                    }
+                </Box>
+            </Box>
+        </Box>
+    )
 }
+
+
