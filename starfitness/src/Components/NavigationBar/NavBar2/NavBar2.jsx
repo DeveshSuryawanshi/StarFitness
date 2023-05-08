@@ -43,7 +43,8 @@ export default function NavBar2() {
                                 <Link className={style.linkcomp} to="/About">About</Link>
                                 <Link className={style.linkcomp} to="/Contact">Contact</Link>
                                 <Link className={style.linkcomp} to="/Products">Products</Link>
-                                <Link className={style.linkcomp} to="/Blogs">Blogs</Link>
+                                <Link className={style.linkcomp} to="/Blogs">Mini Blogs</Link>
+                                <Link className={style.linkcomp} to="/Login">Login</Link>
                             </Box>
                         </Box>
                     </DrawerContent>

@@ -1,0 +1,374 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Devesh Suryawanshi",
+      "email": "devesh@gmail.com",
+      "password": "devesh"
+    },
+    {
+      "username": "Rangila",
+      "email": "Rangila@gmail.com",
+      "password": "Rangila",
+      "id": 2
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Mass Gainer",
+      "description": "High-calorie mass gainer for muscle building.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kvmpq4w0/protein-supplement/g/c/p/whey-protein-raw-whey-protein-concentrate-80-powder-2-2lb-shaker-original-imag8hdfsgnffh9k.jpeg?q=70",
+      "category": "Gainer",
+      "price": 49.99
+    },
+    {
+      "id": 2,
+      "title": "Serious Mass",
+      "description": "Weight gainer with high-quality protein and carbohydrates.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/y/m/t/plant-based-protein-organic-plant-protein-pea-protein-brown-rice-original-imagk2b7dzkagcdk.jpeg?q=70",
+      "category": "Gainer",
+      "price": 39.99
+    },
+    {
+      "id": 3,
+      "title": "Protein Powder",
+      "description": "Whey protein powder for muscle recovery and growth.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kvmpq4w0/protein-supplement/g/c/p/whey-protein-raw-whey-protein-concentrate-80-powder-2-2lb-shaker-original-imag8hdfsgnffh9k.jpeg?q=70",
+      "category": "Gainer",
+      "price": 29.99
+    },
+    {
+      "id": 4,
+      "title": "Creatine Monohydrate",
+      "description": "Creatine supplement for improving athletic performance and muscle strength.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/ku2zjww0/protein-supplement/r/v/d/weight-gainers-mass-gainers-super-gainer-xxl-for-muscle-mass-original-imag7aemaaxvhjdz.jpeg?q=70",
+      "category": "Gainer",
+      "price": 19.99
+    },
+    {
+      "id": 5,
+      "title": "Weight Gainer Protein",
+      "description": "Protein powder with added calories and nutrients for weight gain.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kvmpq4w0/protein-supplement/g/c/p/whey-protein-raw-whey-protein-concentrate-80-powder-2-2lb-shaker-original-imag8hdfsgnffh9k.jpeg?q=70",
+      "category": "Gainer",
+      "price": 49.99
+    },
+    {
+      "id": 6,
+      "title": "BCAA Powder",
+      "description": "Branched-chain amino acids (BCAA) powder for muscle recovery and growth.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/y/m/t/plant-based-protein-organic-plant-protein-pea-protein-brown-rice-original-imagk2b7dzkagcdk.jpeg?q=70",
+      "category": "Gainer",
+      "price": 24.99
+    },
+    {
+      "id": 7,
+      "title": "Mass-Tech",
+      "description": "Weight gainer with high-quality protein and carbohydrates.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kvmpq4w0/protein-supplement/g/c/p/whey-protein-raw-whey-protein-concentrate-80-powder-2-2lb-shaker-original-imag8hdfsgnffh9k.jpeg?q=70",
+      "category": "Gainer",
+      "price": 44.99
+    },
+    {
+      "id": 8,
+      "title": "MassiveJoes Bulk",
+      "description": "Weight gainer with a combination of protein, carbohydrates, and fats for muscle growth.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/l1jmc280/protein-supplement/y/6/a/whey-protein-100-whey-protein-2-2lbs-1kg-chocolate-flavor-100-original-imagd354uhfjj8nw.jpeg?q=70",
+      "category": "Gainer",
+      "price": 54.99
+    },
+    {
+      "id": 9,
+      "title": "Mass Gainer Extreme",
+      "description": "High-calorie mass gainer with added vitamins and minerals.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/ku2zjww0/protein-supplement/r/v/d/weight-gainers-mass-gainers-super-gainer-xxl-for-muscle-mass-original-imag7aemaaxvhjdz.jpeg?q=70",
+      "category": "Gainer",
+      "price": 59.99
+    },
+    {
+      "id": 10,
+      "title": "Serious Gainz",
+      "description": "Weight gainer with a combination of protein, carbohydrates, and fats for muscle growth.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kvmpq4w0/protein-supplement/g/c/p/whey-protein-raw-whey-protein-concentrate-80-powder-2-2lb-shaker-original-imag8hdfsgnffh9k.jpeg?q=70",
+      "category": "Gainer",
+      "price": 34.99
+    },
+    {
+      "id": 11,
+      "title": "Optimum Nutrition Pro Gainer",
+      "description": "High-calorie weight gainer with a blend of protein, carbohydrates, and fats.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/ku2zjww0/protein-supplement/r/v/d/weight-gainers-mass-gainers-super-gainer-xxl-for-muscle-mass-original-imag7aemaaxvhjdz.jpeg?q=70",
+      "category": "Gainer",
+      "price": 64.99
+    },
+    {
+      "id": 12,
+      "title": "Creatine Monohydrate",
+      "description": "Pure creatine monohydrate supplement for improving athletic performance and muscle strength.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/o/s/o/creatine-creatine-monohydrate-strength-100-pure-supports-muscle-original-imagnrmr4thbtnwy.jpeg?q=70",
+      "category": "Creatine",
+      "price": 19.99
+    },
+    {
+      "id": 13,
+      "title": "Micronized Creatine",
+      "description": "High-quality creatine monohydrate powder for improved absorption and effectiveness.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/b/j/7/creatine-premium-creatine-monohydrate-powder-supplement-creatine-original-imagg9wmfuqx3vkd.jpeg?q=70",
+      "category": "Creatine",
+      "price": 24.99
+    },
+    {
+      "id": 14,
+      "title": "Kre-Alkalyn",
+      "description": "Buffered creatine supplement for improved absorption and reduced side effects.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/o/s/o/creatine-creatine-monohydrate-strength-100-pure-supports-muscle-original-imagnrmr4thbtnwy.jpeg?q=70",
+      "category": "Creatine",
+      "price": 29.99
+    },
+    {
+      "id": 15,
+      "title": "Creatine HCL",
+      "description": "Highly concentrated creatine hydrochloride supplement for improved absorption and effectiveness.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kydb3ww0/protein-supplement/r/1/y/creatine-creatinine-for-muscle-endurance-muscle-building-gym-original-imagam6yghhye4ev.jpeg?q=70",
+      "category": "Creatine",
+      "price": 39.99
+    },
+    {
+      "id": 16,
+      "title": "Creatine Nitrate",
+      "description": "Nitrate-bound creatine supplement for improved absorption and reduced side effects.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/b/j/7/creatine-premium-creatine-monohydrate-powder-supplement-creatine-original-imagg9wmfuqx3vkd.jpeg?q=70",
+      "category": "Creatine",
+      "price": 34.99
+    },
+    {
+      "id": 17,
+      "title": "Creatine Ethyl Ester",
+      "description": "Esterified creatine supplement for improved absorption and effectiveness.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/b/k/z/creatine-creatine-monohydrate-helps-sustain-longer-workout-original-imagng7paufee9kw.jpeg?q=70",
+      "category": "Creatine",
+      "price": 49.99
+    },
+    {
+      "id": 18,
+      "title": "Creatine AKG",
+      "description": "Alpha-ketoglutarate-bound creatine supplement for improved absorption and effectiveness.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/t/2/0/creatine-creatine-monohydrate-creatine-monohydrate-250g-original-imaghtnhpkgunkqd.jpeg?q=70",
+      "category": "Creatine",
+      "price": 39.99
+    },
+    {
+      "id": 19,
+      "title": "Creatine Pyruvate",
+      "description": "Pyruvate-bound creatine supplement for improved absorption and effectiveness.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kydb3ww0/protein-supplement/r/1/y/creatine-creatinine-for-muscle-endurance-muscle-building-gym-original-imagam6yghhye4ev.jpeg?q=70",
+      "category": "Creatine",
+      "price": 29.99
+    },
+    {
+      "id": 20,
+      "title": "Con-Cret Creatine",
+      "description": "Highly concentrated creatine hydrochloride supplement for improved absorption and effectiveness.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/t/2/0/creatine-creatine-monohydrate-creatine-monohydrate-250g-original-imaghtnhpkgunkqd.jpeg?q=70",
+      "category": "Creatine",
+      "price": 54.99
+    },
+    {
+      "id": 21,
+      "title": "Creatine Citrate",
+      "description": "Citrate-bound creatine supplement for improved absorption and reduced side effects.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/protein-supplement/b/k/z/creatine-creatine-monohydrate-helps-sustain-longer-workout-original-imagng7paufee9kw.jpeg?q=70",
+      "category": "Creatine",
+      "price": 24.99
+    },
+    {
+      "id": 22,
+      "title": "Multivitamin",
+      "description": "Comprehensive multivitamin supplement for supporting overall health and well-being.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kqidx8w0/protein-supplement/v/d/m/fuel-one-whey-protein-24-g-protein-5-29-bcaa-4-21g-glutamic-acid-original-imag4ggbhajhbqgp.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 14.99
+    },
+    {
+      "id": 23,
+      "title": "Fish Oil",
+      "description": "Omega-3 fish oil supplement for supporting heart health and reducing inflammation.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/koad9jk0/protein-supplement/6/k/a/100-mass-gainer-strawberry-5kg-peanut-butter-gmg-s-5-pb-1-team-original-imag2s3xng7zssm4.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 19.99
+    },
+    {
+      "id": 24,
+      "title": "Vitamin D",
+      "description": "Vitamin D supplement for supporting bone health and immune function.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/l45xea80/vitamin-supplement/5/q/y/60-hk-vitals-spirulina-1000-mg-for-immunity-weight-management-60-original-imagf4ghwchh6erg.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 9.99
+    },
+    {
+      "id": 25,
+      "title": "Probiotic",
+      "description": "Probiotic supplement for promoting gut health and digestion.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kqidx8w0/protein-supplement/v/d/m/fuel-one-whey-protein-24-g-protein-5-29-bcaa-4-21g-glutamic-acid-original-imag4ggbhajhbqgp.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 24.99
+    },
+    {
+      "id": 26,
+      "title": "Vitamin C",
+      "description": "Vitamin C supplement for supporting immune function and reducing oxidative stress.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/koad9jk0/protein-supplement/6/k/a/100-mass-gainer-strawberry-5kg-peanut-butter-gmg-s-5-pb-1-team-original-imag2s3xng7zssm4.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 12.99
+    },
+    {
+      "id": 27,
+      "title": "Calcium",
+      "description": "Calcium supplement for supporting bone health and muscle function.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/koad9jk0/protein-supplement/6/k/a/100-mass-gainer-strawberry-5kg-peanut-butter-gmg-s-5-pb-1-team-original-imag2s3xng7zssm4.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 11.99
+    },
+    {
+      "id": 28,
+      "title": "Magnesium",
+      "description": "Magnesium supplement for supporting nerve function and muscle relaxation.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/l45xea80/vitamin-supplement/5/q/y/60-hk-vitals-spirulina-1000-mg-for-immunity-weight-management-60-original-imagf4ghwchh6erg.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 16.99
+    },
+    {
+      "id": 29,
+      "title": "Iron",
+      "description": "Iron supplement for supporting healthy red blood cell production and energy levels.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/ki6bgcw0-0/book/v/o/t/nutrition-science-macronutrients-and-micronutrients-original-imafyyhzhgwucyge.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 8.99
+    },
+    {
+      "id": 30,
+      "title": "Zinc",
+      "description": "Zinc supplement for supporting immune function and wound healing.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/ki96c280-0/book/s/m/m/nutrition-macronutrients-micronutrients-and-metabolism-original-imafy2s6hwzgqqh7.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 14.99
+    },
+    {
+      "id": 31,
+      "title": "B-Complex",
+      "description": "B-complex vitamin supplement for supporting energy metabolism and nerve function.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/jdxeykw0/vitamin-supplement/q/m/q/1-nmt17027-nutricharge-original-imaf2zfwgxgbbvgc.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 18.99
+    },
+    {
+      "id": 32,
+      "title": "Vitamin E",
+      "description": "Vitamin E supplement for supporting immune function and reducing inflammation.",
+      "image": "https://rukminim1.flixcart.com/image/612/612/ki6bgcw0-0/book/v/o/t/nutrition-science-macronutrients-and-micronutrients-original-imafyyhzhgwucyge.jpeg?q=70",
+      "category": "Micronutrients",
+      "price": 13.99
+    },
+    {
+      "id": 33,
+      "title": "Treadmill",
+      "description": "A high-quality treadmill designed for runners",
+      "image": "https://rukminim1.flixcart.com/image/612/612/jv19qq80/treadmill/h/m/a/mft-410-4-manual-powermax-fitness-original-imafdhygxkb7hgg6.jpeg?q=70",
+      "category": "equipment",
+      "price": 1499.99
+    },
+    {
+      "id": 34,
+      "title": "Exercise Bike",
+      "description": "A stationary bike for indoor cycling workouts",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/exercise-bike/r/p/a/6kg-night-fury-pro-spin-bike-exercise-cycle-with-calorie-pulse-original-imaghy48ydknmtfv.jpeg?q=70",
+      "category": "equipment",
+      "price": 699.99
+    },
+    {
+      "id": 35,
+      "title": "Rowing Machine",
+      "description": "A full-body workout machine that simulates rowing",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/exercise-bike/a/q/g/br-3000c-commercial-180-powermax-fitness-55-5-24-original-imaghf9dkyvvgkgx.jpeg?q=70",
+      "category": "equipment",
+      "price": 1199.99
+    },
+    {
+      "id": 36,
+      "title": "Elliptical Machine",
+      "description": "A low-impact machine for full-body workouts",
+      "image": "https://rukminim1.flixcart.com/image/612/612/jv19qq80/treadmill/h/m/a/mft-410-4-manual-powermax-fitness-original-imafdhygxkb7hgg6.jpeg?q=70",
+      "category": "equipment",
+      "price": 899.99
+    },
+    {
+      "id": 37,
+      "title": "Weight Bench",
+      "description": "A sturdy bench designed for weightlifting exercises",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/fitness-bench/l/a/o/-original-imagmufyfyxn2fte.jpeg?q=70",
+      "category": "equipment",
+      "price": 499.99
+    },
+    {
+      "id": 38,
+      "title": "Dumbbells",
+      "description": "A set of adjustable dumbbells for strength training",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kjkbv680-0/dumbbell/c/b/5/5kg-x-2-hexa-dumbbell-10-hashtag-fitness-original-imafz3y56ge6kpge.jpeg?q=70",
+      "category": "equipment",
+      "price": 399.99
+    },
+    {
+      "id": 39,
+      "title": "Kettlebells",
+      "description": "A set of kettlebells for full-body workouts",
+      "image": "https://rukminim1.flixcart.com/image/612/612/krf91u80/gym-ball/p/f/z/15-bodygrip-kettlebell-bodygrip-kettlebell-for-home-gym-5-kg-original-imag583puztewgvh.jpeg?q=70",
+      "category": "equipment",
+      "price": 249.99
+    },
+    {
+      "id": 40,
+      "title": "Resistance Bands",
+      "description": "A set of resistance bands for strength training",
+      "image": "https://rukminim1.flixcart.com/image/612/612/kkzrpu80/fitness-bench/n/x/c/multipurpose-20-in-1-bench-s-s-black-220-gofitpro-original-imagy7xa3sv4gqfn.jpeg?q=70",
+      "category": "equipment",
+      "price": 39.99
+    },
+    {
+      "id": 41,
+      "title": "Jump Rope",
+      "description": "A high-quality jump rope for cardio workouts",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/resistance-tube/x/t/g/by-tiger-shroff-11-pcs-resistance-bands-set-exercise-bands-home-original-imagzz2acur5bygh.jpeg?q=70",
+      "category": "equipment",
+      "price": 19.99
+    },
+    {
+      "id": 42,
+      "title": "Yoga Mat",
+      "description": "A durable yoga mat for yoga and Pilates workouts",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/sport-mat/s/x/p/6mm-anti-skid-yoga-mat-with-carry-bag-for-home-gym-outdoor-original-imaggzyb46mzy2ct.jpeg?q=70",
+      "category": "equipment",
+      "price": 29.99
+    },
+    {
+      "id": 43,
+      "title": "Foam Roller",
+      "description": "A foam roller for self-massage and muscle recovery",
+      "image": "https://rukminim1.flixcart.com/image/416/416/ku04o7k0/kit/h/0/i/athletes-choice-pack-of-2-fitness-combo-1x-abs-builder-wheel-original-imag7849csgzeq6f.jpeg?q=70",
+      "category": "equipment",
+      "price": 19.99
+    }
+  ]
+}

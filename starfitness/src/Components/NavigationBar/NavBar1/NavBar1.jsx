@@ -1,9 +1,13 @@
-import { Box, Flex, Stack, Text, WrapItem } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Stack, Text, WrapItem } from "@chakra-ui/react";
 import StarFitness from "../AppLogo/StarFitness.png";
 import { Link } from "react-router-dom";
 import style from "./NavBar1.module.css";
+import { AppDataManager } from "../../../App Context/AppContext";
+import { useContext } from "react";
 
 export default function NavBar1() {
+
+    const context = useContext(AppDataManager);
 
     return (
         <Box>
@@ -19,10 +23,14 @@ export default function NavBar1() {
                     <Link className={style.linkcomp} to="/About">About</Link>
                     <Link className={style.linkcomp} to="/Contact">Contact</Link>
                     <Link className={style.linkcomp} to="/Products">Products</Link>
-                    <Link className={style.linkcomp} to="/Blogs">Blogs</Link>
+                    <Link className={style.linkcomp} to="/Blogs">Mini Blogs</Link>
                 </Box>
                 <Box display="flex" alignItems="center">
-                    <Link className={style.login} to="/Login">Login</Link>
+                    {context.isAuth ? <Stack direction='column'>
+                        <Avatar margin={"auto"} display={"block"} name='Oshigaki Kisame' backgroundColor={"tomato"} src='https://avatars.githubusercontent.com/u/110163013?v=4'/>
+                        <Text>Devesh Suryawanshi</Text>
+                    </Stack> : <Link className={style.login} to="/Login">Login</Link>
+                    }
                 </Box>
             </Flex>
         </Box>

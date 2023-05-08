@@ -20,7 +20,7 @@
 
 .image1{
     width: 600px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     border-radius : 20px;
 }
 
@@ -28,6 +28,39 @@
     display: flex;
     width: 90%;
     justify-content: space-between;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.contgrid{
+    margin: 70px;
+}
+
+.btn{
+    margin: auto;
+    color: white;
+}
+
+.heading2{
+    font-weight: 900;   
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.gridItem{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container3{
+    margin: 80px;
+}
+
+.tab{
+    font-size: 25px;
 }
 
 @media (max-width: 1304px) {
@@ -57,6 +90,10 @@
         border-radius: 5px;
         font-size: 13px;
     }
+
+    .contgrid{
+        margin: 50px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -82,6 +119,10 @@
         border-radius: 5px;
         font-size: 13px;
     }
+
+    .contgrid{
+        margin: 40px;
+    }
 }
   
 @media (max-width: 774px) {
@@ -101,6 +142,14 @@
         border-radius: 5px;
         font-size: 10px;
     }
+
+    .contgrid{
+        margin: 20px;
+    }
+
+    .container3{
+        margin: 20px;
+    }
 }
 
 @media (max-width: 661px) {
@@ -112,6 +161,10 @@
         font-size: 8px;
     }
 
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .LinkComp{
         text-decoration: none;
         padding: 10px 20px;
@@ -120,6 +173,8 @@
         border-radius: 5px;
         font-size: 8px;
     }
+
+   
 }
 
 @media (max-width: 549px) {
@@ -134,7 +189,7 @@
     .image1{
         width: 250px;
         margin: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     }
 
     .box1{
