@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardBody, CardFooter, Stack, Text, Button, Image, Heading } from '@chakra-ui/react'
+import { Navigate } from 'react-router-dom'
 
 export default function Card1({image,head,tips,hide}) {
     return (
@@ -24,7 +25,7 @@ export default function Card1({image,head,tips,hide}) {
                 </CardBody>
 
                 <CardFooter>
-                    {hide ? <Button variant='solid' colorScheme='blackAlpha' color={"black"}>
+                    {hide ? <Button onClick={(e)=><Navigate to="/Blogs"/>} variant='solid' colorScheme='blackAlpha' color={"black"}>
                         Visite now
                     </Button> : null}
                 </CardFooter>

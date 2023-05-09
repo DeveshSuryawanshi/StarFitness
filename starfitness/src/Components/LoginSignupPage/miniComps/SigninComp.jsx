@@ -10,9 +10,9 @@ import { useState } from "react";
 const obj = {
     username: "",
     email: "",
-    password: ""
+    password: "",
+    image : ""
 }
-
 
 export default function SigninComp({ checklogin }) {
 
@@ -31,7 +31,7 @@ export default function SigninComp({ checklogin }) {
     }
 
     const PostData = (userData) => {
-        fetch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/users`, {
+        fetch(`https://cw-project-rct101.onrender.com/users`, {
             method: "POST",
             body: JSON.stringify(userData),
             headers: {
@@ -64,6 +64,10 @@ export default function SigninComp({ checklogin }) {
                 <Box my={5}>
                     <FormLabel>Username</FormLabel>
                     <Input backgroundColor={"white"} placeholder="Create Username" type='text' name="username" onChange={(e) => handleChange(e)} />
+                </Box>
+                <Box my={5}>
+                    <FormLabel>Profile Image</FormLabel>
+                    <Input backgroundColor={"white"} placeholder="Enter Url" type='text' name="image" onChange={(e) => handleChange(e)} />
                 </Box>
                 <Box>
                     <FormLabel>Create Password</FormLabel>

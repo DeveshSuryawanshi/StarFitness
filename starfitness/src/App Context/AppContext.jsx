@@ -8,16 +8,21 @@ export default function AppContext({ children }) {
     const navto = useNavigate();
 
     const [isAuth, setisAuth] = useState(false);
+    const [user, setuser] = useState({
+        username : "",
+        image : "",
+    })
 
     const getdata = (loginData) => {
         console.log(loginData);
-        fetch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/users`)
+        fetch(`https://cw-project-rct101.onrender.com/users`)
             .then((res) => res.json())
             .then((data) => {
                 data.forEach((e) => {
                     if(e.email === loginData.email && e.password === loginData.password){
                         setisAuth(true);
                         navto("/");
+                        setuser({...user, username : e.username, image : e.image})
                     }
                 });
             })
@@ -26,7 +31,7 @@ export default function AppContext({ children }) {
 
 
     return (
-        <AppDataManager.Provider value={{getdata,isAuth}}>
+        <AppDataManager.Provider value={{getdata,isAuth,user}}>
             {children}
         </AppDataManager.Provider>
     )
