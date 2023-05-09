@@ -1,5 +1,5 @@
 import { Box, Button, Center, Container, Flex, HStack, Heading, Img, SimpleGrid, Text } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import style from "./Landingpage.module.css";
 import { FaRegHandshake } from "react-icons/fa";

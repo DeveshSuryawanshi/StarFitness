@@ -14,9 +14,7 @@ import {useNavigate} from "react-router-dom";
 export default function LoginComp({checklogin}) {
 
     const context = useContext(AppDataManager);
-
-    console.log(AppDataManager)
-
+    
     const breakpoints = {
         sm: '30em', // 480px
         md: '48em', // 768px
@@ -36,13 +34,6 @@ export default function LoginComp({checklogin}) {
 
     const handlesubmit = () =>{
         context.getdata(loginData);
-        Toast ({
-            title: 'Account created.',
-            description: "We've created your account for you.",
-            status: 'success',
-            duration: 9000,
-            isClosable: true,
-        })
     }   
 
     return (
@@ -64,7 +55,16 @@ export default function LoginComp({checklogin}) {
                 </Box>
                 <Button onClick={()=>checklogin(false)} style={{backgroundColor : "whitesmoke", textDecoration : "underline"}} mt={5}>New User?</Button>
                 <FormHelperText mb={5}>We'll never share your email.</FormHelperText>
-                <Button onClick={handlesubmit} style={{backgroundColor : "black", color : "white"}}>Submit</Button>
+                <Button onClick={()=> {
+                    handlesubmit()
+                    Toast({
+                        title: 'Account created.',
+                        description: "We've created your account for you.",
+                        status: 'success',
+                        duration: 9000,
+                        isClosable: true,
+                      })
+                    }} style={{backgroundColor : "black", color : "white"}}>Submit</Button>
             </FormControl>
         </Box>
     )

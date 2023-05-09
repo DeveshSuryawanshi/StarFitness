@@ -27,8 +27,8 @@ export default function NavBar1() {
                 </Box>
                 <Box display="flex" alignItems="center">
                     {context.isAuth ? <Stack direction='column'>
-                        <Avatar margin={"auto"} display={"block"} name='Oshigaki Kisame' backgroundColor={"tomato"} src='https://avatars.githubusercontent.com/u/110163013?v=4'/>
-                        <Text>Devesh Suryawanshi</Text>
+                        <Avatar margin={"auto"} display={"block"} name='Oshigaki Kisame' backgroundColor={"tomato"} src={context.user.image}/>
+                        <Text>{context.user.username}</Text>
                     </Stack> : <Link className={style.login} to="/Login">Login</Link>
                     }
                 </Box>

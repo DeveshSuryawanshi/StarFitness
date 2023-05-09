@@ -8,17 +8,13 @@ export default function Login() {
 
     const [login, setlogin] = useState(true);
 
-    const regis = (val) => {
-        setRegister(true);
-    }
-
     const checklogin = (val) => {
         setlogin(val);
     }
 
     return (
         <Box>
-            {login ? <LoginComp checklogin={checklogin} /> : <SigninComp regis={regis} checklogin={checklogin} />}
+            {login ? <LoginComp checklogin={checklogin} /> : <SigninComp checklogin={checklogin} />}
         </Box>
     )
 }

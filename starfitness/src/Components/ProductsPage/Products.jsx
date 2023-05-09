@@ -15,19 +15,19 @@ export default function Products() {
 
         let url;
         if (val === "Asc") {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=title&_order=asc`;
+            url = `https://cw-project-rct101.onrender.com/products?_sort=title&_order=asc`;
         } else if (val === "Dec") {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=title&_order=desc`;
+            url = `https://cw-project-rct101.onrender.com/products?_sort=title&_order=desc`;
         } else if (val === "lowtohigh") {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=price&_order=asc`;
+            url = `https://cw-project-rct101.onrender.com/products?_sort=price&_order=asc`;
         } else if (val === "hightolow") {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?_sort=price&_order=desc`;
+            url = `https://cw-project-rct101.onrender.com/products?_sort=price&_order=desc`;
         } else if (val === "Micronutrients" || val === "equipment") {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?category=${val}`;
+            url = `https://cw-project-rct101.onrender.com/products?category=${val}`;
         } else if (val === "GainerCreatine") {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?category=Gainer&category=Creatine`;
+            url = `https://cw-project-rct101.onrender.com/products?category=Gainer&category=Creatine`;
         } else {
-            url = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`;
+            url = `https://cw-project-rct101.onrender.com/products`;
         }
 
         fetch(url)
@@ -47,7 +47,7 @@ export default function Products() {
     }
 
     const search = (e) => {
-        fetch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products?q=${e.target.value}`)
+        fetch(`https://cw-project-rct101.onrender.com/products?q=${e.target.value}`)
             .then((res) => res.json())
             .then((data) => setProductData(data))
             .catch((error)=> console.log(error))
@@ -69,7 +69,7 @@ export default function Products() {
                 <Box>
                     <FunctionalBar getSort={getSort} />
                 </Box>
-                <Box>
+                <Box m={"auto"}>
                     {
                         loding ? <Spinner
                         m={"auto"}

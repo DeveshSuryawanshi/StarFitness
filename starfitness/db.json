@@ -4,25 +4,15 @@
       "id": 1,
       "username": "Devesh Suryawanshi",
       "email": "devesh@gmail.com",
-      "password": "devesh"
+      "password": "devesh",
+      "image": "https://avatars.githubusercontent.com/u/110163013?v=4"
     },
     {
       "username": "Rangila",
       "email": "Rangila@gmail.com",
       "password": "Rangila",
-      "id": 2
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 3
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 4
+      "id": 2,
+      "image": "https://avatars.githubusercontent.com/u/8108337?v=3&s=400"
     }
   ],
   "products": [
@@ -369,6 +359,128 @@
       "image": "https://rukminim1.flixcart.com/image/416/416/ku04o7k0/kit/h/0/i/athletes-choice-pack-of-2-fitness-combo-1x-abs-builder-wheel-original-imag7849csgzeq6f.jpeg?q=70",
       "category": "equipment",
       "price": 19.99
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Best Spine Excercise",
+      "category": "FitnessTips",
+      "description": "Begin on your hands and knees with your wrists directly under your shoulders and your knees under your hips.Inhale and arch your spine, bringing your tailbone and head towards the ceiling, while dropping your belly towards the ground.",
+      "author": "Devesh Suryawanshi",
+      "authorImage": "https://avatars.githubusercontent.com/u/110163013?v=4"
+    },
+    {
+      "id": 2,
+      "title": "The Benefits of Meditation",
+      "category": "MentalHealth",
+      "description": "Meditation can reduce stress, anxiety, and depression. It also promotes emotional well-being, improves attention and focus, and increases self-awareness.",
+      "author": "Sarah Johnson",
+      "authorImage": "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Importance of a Balanced Diet",
+      "category": "Nutrition",
+      "description": "A balanced diet provides the necessary nutrients for our body to function properly. It can prevent chronic diseases, maintain a healthy weight, and improve overall well-being.",
+      "author": "John Smith",
+      "authorImage": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Benefits of Strength Training",
+      "category": "FitnessTips",
+      "description": "Strength training can increase muscle mass and bone density, improve metabolism, and enhance physical performance. It also reduces the risk of injury and enhances overall health.",
+      "author": "Rachel Green",
+      "authorImage": "https://randomuser.me/api/portraits/women/14.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Power of Positive Thinking",
+      "category": "MentalHealth",
+      "description": "Positive thinking can improve self-esteem, reduce stress, and enhance overall well-being. It also helps in coping with difficult situations and building resilience.",
+      "author": "Mark Johnson",
+      "authorImage": "https://randomuser.me/api/portraits/men/75.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Importance of Sleep",
+      "category": "HealthTips",
+      "description": "Getting enough sleep is crucial for physical and mental health. It improves memory, concentration, and mood, and reduces the risk of chronic diseases.",
+      "author": "Emma Stone",
+      "authorImage": "https://randomuser.me/api/portraits/women/23.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Benefits of Cardiovascular Exercise",
+      "category": "FitnessTips",
+      "description": "Cardiovascular exercise can improve heart health, reduce the risk of chronic diseases, and enhance overall fitness. It also boosts mood and energy levels.",
+      "author": "Daniel Lee",
+      "authorImage": "https://randomuser.me/api/portraits/men/55.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Importance of Hydration",
+      "category": "HealthTips",
+      "description": "Staying hydrated is important for maintaining bodily functions, regulating body temperature, and flushing out toxins. It also promotes healthy skin and prevents fatigue.",
+      "author": "Lucy Davis",
+      "authorImage": "https://randomuser.me/api/portraits/women/37.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Benefits of Mindfulness",
+      "category": "MentalHealth",
+      "description": "Mindfulness can reduce stress, anxiety, and depression, increase emotional regulation, and improve overall well-being. It also enhances cognitive functions and supports healthy relationships.",
+      "author": "Emily Chen",
+      "authorImage": "https://randomuser.me/api/portraits/women/41.jpg"
+    },
+    {
+      "id": 11,
+      "title": "The Importance of Stretching",
+      "category": "FitnessTips",
+      "description": "Stretching can improve flexibility, reduce muscle tension and soreness, and enhance athletic performance. It also promotes better posture and reduces the risk of injury.",
+      "author": "David Kim",
+      "authorImage": "https://randomuser.me/api/portraits/men/66.jpg"
+    },
+    {
+      "id": 12,
+      "title": "The Benefits of a Positive Work Environment",
+      "category": "CareerAdvice",
+      "description": "A positive work environment can improve job satisfaction, increase productivity, and reduce stress and burnout. It also promotes teamwork and fosters innovation.",
+      "author": "Alicia Smith",
+      "authorImage": "https://randomuser.me/api/portraits/women/11.jpg"
+    },
+    {
+      "id": 13,
+      "title": "The Importance of Social Support",
+      "category": "MentalHealth",
+      "description": "Social support can reduce stress, improve coping skills, and enhance overall well-being. It also promotes a sense of belonging and provides emotional and practical assistance during difficult times.",
+      "author": "Alex Johnson",
+      "authorImage": "https://randomuser.me/api/portraits/men/88.jpg"
+    },
+    {
+      "id": 14,
+      "title": "The Benefits of Mind-Body Practices",
+      "category": "HealthTips",
+      "description": "Mind-body practices like meditation, yoga, and tai chi can improve physical and mental health, reduce stress, and enhance overall well-being. They also promote self-awareness and emotional regulation.",
+      "author": "Samantha Lee",
+      "authorImage": "https://randomuser.me/api/portraits/women/78.jpg"
+    },
+    {
+      "id": 15,
+      "title": "The Importance of Personal Development",
+      "category": "CareerAdvice",
+      "description": "Personal development can enhance skills, knowledge, and attitudes, and promote career growth and success. It also supports self-awareness and promotes a growth mindset.",
+      "author": "Michael Brown",
+      "authorImage": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+      "id": 16,
+      "title": "The Benefits of Resistance Training",
+      "category": "FitnessTips",
+      "description": "Resistance training can increase muscle strength and size, improve bone density, and enhance physical function. It also boosts metabolism and reduces the risk of chronic diseases.",
+      "author": "Katie Smith",
+      "authorImage": "https://randomuser.me/api/portraits/women/92.jpg"
     }
   ]
 }
