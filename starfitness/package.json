@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server": "json-server --watch db.json --port 8080"
+    "json-server": "json-server --watch db.json --port 8080",
+    "homepage":"."
   },
   "eslintConfig": {
     "extends": [
