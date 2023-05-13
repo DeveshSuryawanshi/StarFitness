@@ -2,7 +2,7 @@
 Masai RCT 101 Construct Week Project 
 
 # 🎈🎉About the website 
-This website is realeatd to fitness where you can find fitness tips, fitness products, fitness couch, mentors also you can find mini blogs posts where you can get fitness tips from many bigger fitness freak. 
+This website is related to fitness, where you can find fitness tips, fitness products, fitness coaches, and mentors. You can also find mini blog posts where you can get fitness tips from many experienced fitness enthusiasts. 
 
 # ⚙️Tech Stack
 
