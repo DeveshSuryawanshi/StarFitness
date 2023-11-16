@@ -5,10 +5,13 @@ import { Navigate } from "react-router-dom";
 export default function PriviateRoute ({children}) {
 
     const context = useContext(AppDataManager);
+    const isAuth = localStorage.getItem("isAuth");
 
-    if(context.isAuth == false){
-        return <Navigate to="/login"/>;
-    }
+    return isAuth ? children : <Navigate to="/login"/>
 
-    return children;    
+    // if(isAuth == false){
+    //     return <Navigate to="/login"/>;
+    // }
+
+    // return children;    
 }
