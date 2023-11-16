@@ -1,11 +1,13 @@
 import { createContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import { useToast } from '@chakra-ui/react'
 
 export const AppDataManager = createContext();
 
 export default function AppContext({ children }) {
 
     const navto = useNavigate();
+    const toast = useToast();
 
     const [isAuth, setisAuth] = useState(false);
     const [user, setuser] = useState({
@@ -21,6 +23,12 @@ export default function AppContext({ children }) {
                 data.forEach((e) => {
                     if(e.email === loginData.email && e.password === loginData.password){
                         setisAuth(true);
+                        toast({
+                            title: 'Login Successfull.',
+                            status: 'success',
+                            duration: 2000,
+                            isClosable: true,
+                          })
                         localStorage.setItem("isAuth", isAuth);
                         localStorage.setItem("image", e.image);
                         localStorage.setItem("username", e.username);
@@ -28,6 +36,14 @@ export default function AppContext({ children }) {
                         setuser({...user, username : e.username, image : e.image})
                     }
                 });
+            })
+            .catch((err)=>{
+                toast({
+                    title: 'Login failed',
+                    status: 'error',
+                    duration: 2000,
+                    isClosable: true,
+                  })
             })
     }
 

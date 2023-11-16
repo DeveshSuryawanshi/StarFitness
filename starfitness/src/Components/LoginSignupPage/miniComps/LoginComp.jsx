@@ -1,14 +1,12 @@
-import { Box, Button, Input, Formik, Field, Text, Toast } from "@chakra-ui/react";
+import { Box, Button, Input, Text } from "@chakra-ui/react";
 import {
     FormControl,
     FormLabel,
-    FormErrorMessage,
     FormHelperText,
 } from '@chakra-ui/react'
 import { useState } from "react";
 import { useContext } from "react";
 import {AppDataManager} from "../../../App Context/AppContext"
-import {useNavigate} from "react-router-dom";
 
 
 export default function LoginComp({checklogin}) {
@@ -38,13 +36,13 @@ export default function LoginComp({checklogin}) {
 
     return (
         <Box display={"flex"} justifyContent={"center"} >
-            <FormControl padding={5} borderRadius={5} style={{backgroundColor : "whitesmoke", border : "solid gray 1px"}} width={[
+            <FormControl padding={5} borderRadius={5} width={[
                 '80%', // 0-30em
                 '50%', // 30em-48em
                 '40%', // 48em-62em
                 '23%', // 62em+
-            ]}>
-                <Text fontWeight={900}>Login</Text>
+            ]} boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"}>
+                <Text fontWeight={900} fontSize={"20px"} mb={"30px"}>Login</Text>
                 <Box my={5}>
                     <FormLabel>Email address</FormLabel>
                     <Input backgroundColor={"white"} placeholder="Enter Email" type='email' name="email" onChange={(e)=> handleChange(e)} />
@@ -53,18 +51,9 @@ export default function LoginComp({checklogin}) {
                     <FormLabel>Password</FormLabel>
                     <Input backgroundColor={"white"} placeholder="Enter Password" type='paaaword' name="password" onChange={(e)=> handleChange(e)}/>
                 </Box>
-                <Button onClick={()=>checklogin(false)} style={{backgroundColor : "whitesmoke", textDecoration : "underline"}} mt={5}>New User?</Button>
+                <Button onClick={()=>checklogin(false)} bg={"white"} style={{textDecoration : "underline"}} mt={5}>New User?</Button>
                 <FormHelperText mb={5}>We'll never share your email.</FormHelperText>
-                <Button onClick={()=> {
-                    handlesubmit()
-                    Toast({
-                        title: 'Account created.',
-                        description: "We've created your account for you.",
-                        status: 'success',
-                        duration: 9000,
-                        isClosable: true,
-                      })
-                    }} style={{backgroundColor : "black", color : "white"}}>Submit</Button>
+                <Button w={"100%"} onClick={handlesubmit} style={{backgroundColor : "black", color : "white"}}>Submit</Button>
             </FormControl>
         </Box>
     )

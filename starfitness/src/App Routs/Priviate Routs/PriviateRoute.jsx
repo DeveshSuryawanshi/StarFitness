@@ -9,9 +9,4 @@ export default function PriviateRoute ({children}) {
 
     return isAuth ? children : <Navigate to="/login"/>
 
-    // if(isAuth == false){
-    //     return <Navigate to="/login"/>;
-    // }
-
-    // return children;    
 }

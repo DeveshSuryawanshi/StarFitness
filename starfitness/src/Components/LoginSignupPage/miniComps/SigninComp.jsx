@@ -6,6 +6,7 @@ import {
     FormHelperText,
 } from '@chakra-ui/react'
 import { useState } from "react";
+import { useToast } from '@chakra-ui/react'
 
 const obj = {
     username: "",
@@ -15,7 +16,7 @@ const obj = {
 }
 
 export default function SigninComp({ checklogin }) {
-
+    const toast = useToast()
     const breakpoints = {
         sm: '30em', // 480px
         md: '48em', // 768px
@@ -41,6 +42,21 @@ export default function SigninComp({ checklogin }) {
             .then((res) => res.json())
             .then((data) => {
                 checklogin(true)
+                toast({
+                    title: 'Account created Sucessfully',
+                    description: "We've created your account for you.",
+                    status: 'success',
+                    duration: 2000,
+                    isClosable: true,
+                  })
+            })
+            .catch((error) =>{
+                toast({
+                    title: 'Failed',
+                    status: 'error',
+                    duration: 2000,
+                    isClosable: true,
+                  })
             })
     }
 
@@ -50,7 +66,7 @@ export default function SigninComp({ checklogin }) {
 
     return (
         <Box display={"flex"} justifyContent={"center"} >
-            <FormControl padding={5} borderRadius={5} style={{ backgroundColor: "whitesmoke", border: "solid gray 1px" }} width={[
+            <FormControl padding={5} borderRadius={5} boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"}width={[
                 '80%', // 0-30em
                 '50%', // 30em-48em
                 '40%', // 48em-62em
@@ -73,9 +89,9 @@ export default function SigninComp({ checklogin }) {
                     <FormLabel>Create Password</FormLabel>
                     <Input backgroundColor={"white"} placeholder="Create new Password" type='paaaword' name="password" onChange={(e) => handleChange(e)} />
                 </Box>
-                <Button onClick={() => checklogin(true)} style={{ backgroundColor: "whitesmoke", textDecoration: "underline" }} mt={5}>Allready a User?</Button>
+                <Button onClick={() => checklogin(true)} bg={"white"} style={{ textDecoration: "underline" }} mt={5}>Allready a User?</Button>
                 <FormHelperText mb={5}>We'll never share your email.</FormHelperText>
-                <Button onClick={handleSubmit} style={{ backgroundColor: "black", color: "white" }}>Register</Button>
+                <Button onClick={handleSubmit} w={"100%"} style={{ backgroundColor: "black", color: "white" }}>Register</Button>
             </FormControl>
         </Box>
     )

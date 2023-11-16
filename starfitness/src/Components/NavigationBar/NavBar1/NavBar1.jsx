@@ -1,7 +1,6 @@
 import {
   Avatar,
   Box,
-  Button,
   Flex,
   Stack,
   Text,
@@ -13,13 +12,14 @@ import style from "./NavBar1.module.css";
 import { AppDataManager } from "../../../App Context/AppContext";
 import { useContext, useEffect, useState } from "react";
 import { BiLogOut } from "react-icons/bi";
+import { useToast } from '@chakra-ui/react';
 
 export default function NavBar1() {
   const context = useContext(AppDataManager);
   const [image, setImage] = useState("");
   const [username, setUsername] = useState("");
-
   const isAuth = localStorage.getItem("isAuth");
+  const toast = useToast()
 
   useEffect(() => {
     setImage(localStorage.getItem("image"));
@@ -28,6 +28,12 @@ export default function NavBar1() {
 
   const handleLogout = () =>{
     localStorage.clear();
+    toast({
+        title: 'Logout Successfull',
+        status: 'success',
+        duration: 2000,
+        isClosable: true,
+      })
     setImage("");
   }
 
@@ -44,12 +50,12 @@ export default function NavBar1() {
           <Link className={style.linkcomp} to="/">
             Home
           </Link>
-          <Link className={style.linkcomp} to="/About">
+          {/* <Link className={style.linkcomp} to="/About">
             About
-          </Link>
-          <Link className={style.linkcomp} to="/Contact">
+          </Link> */}
+          {/* <Link className={style.linkcomp} to="/Contact">
             Contact
-          </Link>
+          </Link> */}
           <Link className={style.linkcomp} to="/Products">
             Products
           </Link>
