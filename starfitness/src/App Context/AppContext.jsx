@@ -21,6 +21,9 @@ export default function AppContext({ children }) {
                 data.forEach((e) => {
                     if(e.email === loginData.email && e.password === loginData.password){
                         setisAuth(true);
+                        localStorage.setItem("isAuth", isAuth);
+                        localStorage.setItem("image", e.image);
+                        localStorage.setItem("username", e.username);
                         navto("/");
                         setuser({...user, username : e.username, image : e.image})
                     }
